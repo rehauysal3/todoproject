@@ -1,0 +1,208 @@
+
+body {
+	
+	background-image: url("../img/Chicago-Wallpaper-3.jpg");
+    min-height: 100vh;
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 1.3rem;	
+    	    
+}
+/* TODO 1 FLEXBOX ÖĞREN https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.btn{
+  margin-left: 45px;
+}
+.lead {
+  font-size: 1.5rem;
+  font-family: var(--righteous-font);
+}
+.btnyeni{
+  display: inline-block;
+}
+
+#txtadd{
+  text-align: center;
+}
+
+
+ul li label{
+  width: 96%;
+}
+ul li label .far.fa-edit{
+  padding-top: 12px;
+  padding-right: 20px;
+  float:right;
+  height: 10px;
+  width: 10px;
+}
+.inputtext{
+  border-style: none;
+  width:180px;
+ 
+
+}
+
+.textinput{
+  width: 80%;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+form {
+  background-color: #fff;
+  padding: 15px;
+}
+input[type="text"] {
+  width: 80%;
+  height: 30px;
+  outline: 0;
+  border: none;
+  font-size: 1.5em;
+  background: #fff;
+  color: #2f4f4f;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+button {
+
+
+  display: none;
+  font-size: 1.5em;
+  color: #53bdff;
+  background-color: #fff;
+  outline: 0;
+  border: none;
+  width: 50px;
+  cursor: pointer;
+}
+.tasksBoard {
+  background-color: #fff;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  /*display: none;*/
+}
+ul {
+  list-style: none;
+}
+li {
+  border-bottom: 1px solid #53bdff;
+  font-size: 1.3em;
+  color: #2f4f4f;
+}
+a {
+  float: right;
+  text-align: right;
+  color: #ff6161;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.delete {
+  height: 25px;
+  width: 25px;
+  background-color: #ff6161;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.edit{
+  cursor: pointer;
+
+
+}
+.option-input {
+
+  appearance: none;
+  position: relative;
+  top: 10.3px;
+  height: 30px;
+  width: 30px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  z-index: 1000
+}
+
+.option-input:hover .label-check {
+  background: #9faab7
+}
+
+.option-input:checked  {
+  background: #61ff90
+  
+}
+
+
+.option-input:checked::before {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-size: 16.7px;
+  text-align: center;
+  line-height: 30px
+}
+
+.option-input:checked::after{
+
+  animation: click-wave 0.25s;
+  background: #61ff90;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100
+}
+
+.option-input.radio {
+  border-radius: 50%
+}
+.completed{
+  text-decoration: line-through;
+ 
+}
+.selectbar{
+ width: 170px;
+ margin-left: 15px;
+}
+.yazi{
+  float: right;
+}
+
+
+@media (max-width: 500px) {
+  .main {
+    margin: auto;
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 80%;
+  }
+  button {
+    width: 10%;
+  }
+}
